@@ -1,0 +1,7 @@
+app:
+  port: 8080
+database:
+  ssl_mode: require
+  pool: 50
+cache:
+  ttl: 86400

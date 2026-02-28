@@ -1,0 +1,15 @@
+package jobs
+
+import (
+	"context"
+	"github.com/shaurya/gails/queue"
+)
+
+type {{.Name}}Job struct {
+	// Job fields
+}
+
+func (j *{{.Name}}Job) Perform(ctx context.Context) error {
+	// Job logic
+	return nil
+}

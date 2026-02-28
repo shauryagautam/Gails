@@ -1,0 +1,7 @@
+app:
+  name: MyTestApp
+database:
+  name: myapp_test
+cache:
+  ttl: 60
+  prefix: "test:"

@@ -1,0 +1,4 @@
+app:
+  auto_migrate: true
+database:
+  name: myapp_development

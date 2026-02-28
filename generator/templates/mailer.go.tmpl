@@ -1,0 +1,14 @@
+package mailers
+
+import (
+	"github.com/shaurya/gails/mailer"
+)
+
+type {{.Name}}Mailer struct {
+	mailer.Mailer
+}
+
+func (m {{.Name}}Mailer) {{.Action}}(data any) *mailer.Email {
+    return m.NewEmail().
+        Template("{{.NameLower}}/{{.ActionLower}}", data)
+}

@@ -1,0 +1,20 @@
+package migrations
+
+import (
+	"database/sql"
+	"github.com/pressly/goose/v3"
+)
+
+func init() {
+	goose.AddMigration(Up{{.Timestamp}}, Down{{.Timestamp}})
+}
+
+func Up{{.Timestamp}}(tx *sql.Tx) error {
+	// Migration Up logic
+	return nil
+}
+
+func Down{{.Timestamp}}(tx *sql.Tx) error {
+	// Migration Down logic
+	return nil
+}

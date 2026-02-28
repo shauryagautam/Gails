@@ -1,0 +1,12 @@
+package models
+
+import (
+	"github.com/shaurya/gails/orm"
+)
+
+type {{.Name}} struct {
+	orm.Model
+	{{range .Fields}}
+	{{.Name}} {{.Type}} `gorm:"{{.GormTag}}" validate:"{{.ValidateTag}}"`
+	{{end}}
+}

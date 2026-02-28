@@ -1,0 +1,37 @@
+app:
+  name: MyApp
+  port: 3000
+  secret_key_base: ""
+
+database:
+  host: localhost
+  port: 5432
+  name: myapp_development
+  user: postgres
+  password: ""
+  pool: 10
+  ssl_mode: disable
+
+redis:
+  url: redis://localhost:6379
+  pool: 10
+  db: 0
+
+queue:
+  concurrency: 10
+  queues:
+    - name: critical
+      weight: 6
+    - name: default
+      weight: 3
+    - name: low
+      weight: 1
+
+mailer:
+  smtp_host: localhost
+  smtp_port: 1025
+  from: noreply@myapp.com
+
+cache:
+  ttl: 3600
+  prefix: "myapp:"

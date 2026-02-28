@@ -1,0 +1,35 @@
+en:
+  welcome: "Welcome, %{name}!"
+  goodbye: "Goodbye, %{name}!"
+  errors:
+    required: "%{field} is required"
+    too_short: "%{field} must be at least %{min} characters"
+    too_long: "%{field} must be at most %{max} characters"
+    taken: "%{field} has already been taken"
+    invalid: "%{field} is invalid"
+    blank: "%{field} cannot be blank"
+    not_a_number: "%{field} is not a number"
+    email: "%{field} must be a valid email address"
+  validations:
+    required: "%{field} is required"
+    min: "%{field} must be at least %{param} characters"
+    max: "%{field} must be at most %{param} characters"
+    email: "%{field} must be a valid email address"
+    unique: "%{field} has already been taken"
+    oneof: "%{field} must be one of the allowed values"
+  models:
+    user:
+      name: "Full Name"
+      email: "Email Address"
+    post:
+      title: "Title"
+      body: "Body"
+    comment:
+      body: "Comment"
+  fields:
+    Name: "Name"
+    Email: "Email"
+    Title: "Title"
+    Body: "Body"
+    Age: "Age"
+    Role: "Role"

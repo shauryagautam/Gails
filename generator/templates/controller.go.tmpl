@@ -1,0 +1,16 @@
+package controllers
+
+import (
+	"net/http"
+	"github.com/shaurya/gails/framework"
+)
+
+type {{.Name}}Controller struct {
+	framework.Controller
+}
+
+{{range .Actions}}
+func (c *{{$.Name}}Controller) {{.}} (w http.ResponseWriter, r *http.Request) {
+    // Action implementation
+}
+{{end}}
